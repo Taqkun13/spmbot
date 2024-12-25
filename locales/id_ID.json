@@ -1,0 +1,8 @@
+{
+    "intro": "Apakah ada yang bisa aku bantu?",
+    "description": "Kalo ada silahkan pilih menu dibawah ini",
+    "template.menu": "Ketik angka *{{number}}* : untuk *{{menu}}*",
+    "menu.tentangKantor": "Tentang Kantor",
+    "menu.daftarRekening": "Pendaftaran Rekening",
+    "menu.slipGaji": "Minta Slip Gaji"
+}
