@@ -73,7 +73,7 @@ module.exports = class BotController extends Controller {
                       // Waktu 7 jam yang lalu di WIB
                       const timeThresholdWIB = currentTimeWIB.subtract(7, 'hours').format('YYYY-MM-DD HH:mm:ss');
                       // Query untuk menghapus data yang lebih dari 7 jam
-                      db.run('DELETE FROM user_history WHERE time < ?', [timeThresholdWIB]);
+                      this.db.run('DELETE FROM user_history WHERE time < ?', [timeThresholdWIB]);
                     } else {
                       // Jika file tidak ada, kirim pesan pemberitahuan
                       this.reply(`Maaf, slip gaji kamu periode ini belum tersedia. Silakan cek kembali nanti atau hubungi kantor SPM untuk informasi lebih lanjut. 😊🙏`);
